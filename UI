@@ -21,13 +21,6 @@ local Options = {};
 
 getgenv().Toggles = Toggles;
 getgenv().Options = Options;
-if _G.ColorBG == nil then
-    _G.ColorBG = Color3.fromRGB(255, 130, 0);
-end
-
-if _G.BG == nil then 
-    _G.BG = Color3.fromRGB(20, 20, 20);
-end
 
 local Library = {
     Registry = {};
@@ -37,8 +30,8 @@ local Library = {
 
     FontColor = Color3.fromRGB(255, 255, 255);
     MainColor = Color3.fromRGB(28, 28, 28);
-    BackgroundColor = _G.BG
-    AccentColor = _G.ColorBG
+    BackgroundColor = Color3.fromRGB(20, 20, 20);
+    AccentColor = Color3.fromRGB(255, 0, 0);
     OutlineColor = Color3.fromRGB(50,50,50);
     
     Black = Color3.new(0, 0, 0);
